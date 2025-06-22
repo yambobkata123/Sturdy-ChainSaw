@@ -2,11 +2,11 @@
 
 ## Steps to create skeleton project
 1. Initialize Project
- - [] Init npm project `npm init --yes`
- - [] Change module system
- - [] Add start file `/src/index.js`
- - [] Add Dev Script
- - [] Config Debugging
+ - [x] Init npm project `npm init --yes`
+ - [x] Change module system
+ - [x] Add start file `/src/index.js`
+ - [x] Add Dev Script
+ - [x] Config Debugging
 2. Express
  - [] Install express `npm i express`
  - [] Init express server
