@@ -1,0 +1,46 @@
+<section id="register-page">
+  <div class="signupSection">
+    <div class="info">
+      <h2>Join Ride Showcase and become part of a community!</h2>
+    </div>
+
+    {{#if errors}}
+      <div class="error-container">
+        <ul>
+          {{#each errors}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    {{/if}}
+
+    <form method="POST" class="signupForm" action="/auth/register">
+      <h2>Sign Up</h2>
+      <ul class="ul-wrap">
+        <li>
+          <label for="first-name">First Name:</label>
+          <input type="text" class="inputFields" id="first-name" name="firstName" value="{{firstName}}" />
+        </li>
+        <li>
+          <label for="last-name">Last Name:</label>
+          <input type="text" class="inputFields" id="last-name" name="lastName" value="{{lastName}}" />
+        </li>
+        <li>
+          <label for="email">Email:</label>
+          <input type="text" class="inputFields" id="email" name="email" value="{{email}}" />
+        </li>
+        <li>
+          <label for="password">Password:</label>
+          <input type="password" class="inputFields" id="password" name="password" />
+        </li>
+        <li>
+          <label for="repeat-password">Repeat Password:</label>
+          <input type="password" class="inputFields" id="repeat-password" name="repeatPassword" />
+        </li>
+        <li id="center-btn">
+          <button id="join-btn">JOIN</button>
+        </li>
+      </ul>
+    </form>
+  </div>
+</section>

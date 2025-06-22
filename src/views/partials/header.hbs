@@ -1,0 +1,15 @@
+<header>
+  <nav>
+    <a href="/">Home</a>
+    {{#if user}}
+      <a href="/cars">Browse Rides</a>
+      <a href="/cars/create">Post a Car</a>
+      <a href="/my-showcase">My Showcase</a>
+      <a href="/logout">Logout</a>
+    {{else}}
+      <a href="/cars">Browse Rides</a>
+      <a href="/login">Login</a>
+      <a href="/register">Register</a>
+    {{/if}}
+  </nav>
+</header>
